@@ -5,7 +5,7 @@ import axios from "axios";
 function Home() {
   return (
     <div>
-      <Link to="/Movies">
+      <Link to="/movies">
         <button>Movies</button>
       </Link>
       <h1>Welcome to Express Cinema</h1>
