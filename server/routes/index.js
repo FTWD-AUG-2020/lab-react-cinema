@@ -23,4 +23,12 @@ router.get("/movies/:id", (req, res) => {
     res.json({ movie });
   });
 });
+
+// Add new movie
+router.post("/newMovie", (req, res) => {
+  Movies.create(req.body).then((movie) => {
+    res.json({ movie });
+  })
+})
+
 module.exports = router;

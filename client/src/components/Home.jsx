@@ -5,10 +5,16 @@ import axios from "axios";
 function Home() {
   return (
     <div>
+      <h1>Welcome to Express Cinema</h1>
+
+
       <Link to="/movies">
         <button>Movies</button>
       </Link>
-      <h1>Welcome to Express Cinema</h1>
+
+      <Link to="/newMovie">
+        <button>Add New Movie</button>
+      </Link>
     </div>
   );
 }

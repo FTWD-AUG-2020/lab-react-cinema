@@ -19,7 +19,7 @@ const Movies = (props) => {
     <div>
       {movies?.map((movie) => {
         return (
-          <div>
+          <div key={movie._id}>
             <img src={movie.image} />
             <h1>{movie.title}</h1>
             <Link to={`/movies/${movie._id}`}>See More</Link>
